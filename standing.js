@@ -1,9 +1,12 @@
+
+
+
 const url = document.URL;
 
 const contestId = url.split('/')[4];
 
-const as = document.querySelectorAll(
+const a = document.querySelector(
   `a[href="/contest/${contestId}/standings"]`
 );
 
-as.forEach((a) => a.setAttribute('href', '#'));
+a.setAttribute('href', '#');
