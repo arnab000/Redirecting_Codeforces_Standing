@@ -1,12 +1,13 @@
 {
-    "manifest_version": 2,
-    "name": "My Addon",
-    "version": "1.0",
-    "description": "Des",
-    "content_scripts": [
-        {
-            "matches": ["*://codeforces.com/*"],
-            "js": ["standing.js"]
-        }
-    ]
+  "manifest_version": 2,
+  "name": "CFSDisabler",
+  "version": "1.0",
+  "description": "Disable CF Standing page",
+  "author": "Arnab",
+  "content_scripts": [
+    {
+      "matches": ["*://codeforces.com/contest/*"],
+      "js": ["standing.js"]
+    }
+  ]
 }
